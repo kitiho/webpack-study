@@ -93,12 +93,12 @@ module.exports = {
               开启多进程打包。进程开启需要时间 600ms 进程通信也需要时间
               只有长时间工作的时候用比较好
               */
-              // {
-              //   loader: 'thread-loader',
-              //   options: {
-              //     workers: 2 //进程2个
-              //   }
-              // },
+              {
+                loader: 'thread-loader',
+                options: {
+                  workers: 2 //进程2个
+                }
+              },
               {
                 loader: 'babel-loader',
                 options: {
